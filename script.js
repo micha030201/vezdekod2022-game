@@ -124,12 +124,12 @@ function animate() {
     localStorage.setItem('record', Math.max(localStorage.getItem('record'), showScore))
     ctx.shadowColor = 'rgba(0, 0, 0, 0)'
     ctx.fillStyle = '#000'
-    ctx.font = '80px sans-serif';
+    ctx.font = '8vh sans-serif';
     ctx.fillText(showScore, 50*vw, 220*vw);
-    ctx.font = '40px sans-serif';
-    ctx.fillText('record: ' + localStorage.getItem('record'), 50*vw, 280*vw);
+    ctx.font = '4vh sans-serif';
+    ctx.fillText('record: ' + localStorage.getItem('record'), 50*vw, 300*vw);
 
-    ctx.font = '30px sans-serif';
+    ctx.font = '3vh sans-serif';
     ctx.fillText('reset', 50*vw, cv.height - 20*vw);
 
     requestAnimationFrame(animate)
